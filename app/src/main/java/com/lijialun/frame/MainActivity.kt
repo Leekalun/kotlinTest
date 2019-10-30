@@ -58,7 +58,7 @@ class MainActivity : BaseActivity<MainContract.Presenter>(), MainContract.View,
         currentIndex(Constant.FRAGMENT_SETTING)
     }
 
-    fun currentIndex(index: Int) {
+    private fun currentIndex(index: Int) {
         pager.currentItem = index
     }
 }

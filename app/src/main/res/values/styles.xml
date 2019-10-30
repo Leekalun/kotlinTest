@@ -8,8 +8,17 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="AppTheme.NoBar">
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowEnableSplitTouch">false</item>
+        <item name="android:splitMotionEvents">false</item>
+        <!--<item name="android:windowIsTranslucent">false</item>-->
+    </style>
+
+
     <style name="RadioButton_Style">
-        <item name="android:drawablePadding">@dimen/dp_4</item>
+        <item name="android:drawablePadding">@dimen/dp_2</item>
         <item name="android:textColor">@color/color_A8A8A8</item>
         <item name="android:layout_gravity">center_vertical</item>
         <item name="android:gravity">center</item>

@@ -11,12 +11,20 @@
             android:id="@+id/pager"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            app:layout_constraintTop_toTopOf="@+id/radio_group" />
+            app:layout_constraintTop_toTopOf="@+id/view_line" />
+
+    <View
+            android:background="@color/color_E8E8E8"
+            android:id="@+id/view_line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_0.5"
+            app:layout_constraintTop_toTopOf="@+id/radio_group"
+            tools:ignore="MissingConstraints" />
 
     <RadioGroup
             android:id="@+id/radio_group"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/dp_49"
+            android:layout_height="@dimen/dp_42"
             android:orientation="horizontal"
             app:layout_constraintBottom_toBottomOf="parent"
             tools:ignore="MissingConstraints">
