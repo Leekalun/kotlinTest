@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">KotlinApp</string>
+    <string name="button_name_home">Home</string>
+    <string name="button_name_video">Video</string>
+    <string name="button_name_feelstyle">Feelstyle</string>
+    <string name="button_name_mind">My</string>
+</resources>

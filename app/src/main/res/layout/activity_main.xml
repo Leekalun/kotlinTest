@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <com.lijialun.frame.widget.WideViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toTopOf="@+id/radio_group" />
+
+    <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_49"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:ignore="MissingConstraints">
+
+        <RadioButton
+                android:id="@+id/rb_home"
+                style="@style/RadioButton_Style"
+                android:drawableTop="@drawable/home_selector"
+                android:text="@string/button_name_home" />
+
+        <RadioButton
+                android:id="@+id/rb_movies"
+                style="@style/RadioButton_Style"
+                android:drawableTop="@drawable/movies_selector"
+                android:text="@string/button_name_video" />
+
+        <RadioButton
+                android:id="@+id/rb_free"
+                style="@style/RadioButton_Style"
+                android:drawableTop="@drawable/free_selector"
+                android:text="@string/button_name_feelstyle" />
+
+        <RadioButton
+                android:id="@+id/rb_setting"
+                style="@style/RadioButton_Style"
+                android:drawableTop="@drawable/setting_selector"
+                android:text="@string/button_name_mind" />
+    </RadioGroup>
+
+</android.support.constraint.ConstraintLayout>
