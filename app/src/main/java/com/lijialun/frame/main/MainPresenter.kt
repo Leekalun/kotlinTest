@@ -1,9 +1,9 @@
-package com.lijialun.frame
+package com.lijialun.frame.main
 
 import android.content.Context
-import com.lijialun.frame.base.BasePresenter
 
-class MainPresenter(activity: MainActivity) : MainContract.Presenter {
+class MainPresenter(activity: MainActivity) :
+    MainContract.Presenter {
     var model: MainModel = MainModel(this)
     var view: MainActivity = activity
     override fun toHome() {

@@ -3,10 +3,10 @@ package com.lijialun.frame.adapter
 import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentStatePagerAdapter
 import com.lijialun.frame.Constant
-import com.lijialun.frame.free.FreeFragment
-import com.lijialun.frame.home.HomeFrament
-import com.lijialun.frame.mine.MineFragment
-import com.lijialun.frame.movies.MoviesFragment
+import com.lijialun.frame.model.free.FreeFragment
+import com.lijialun.frame.model.home.HomeFrament
+import com.lijialun.frame.model.mine.MineFragment
+import com.lijialun.frame.model.movies.MoviesFragment
 import android.support.v4.app.FragmentManager as FragmentManager1
 
 class HomeAdapter : FragmentStatePagerAdapter {

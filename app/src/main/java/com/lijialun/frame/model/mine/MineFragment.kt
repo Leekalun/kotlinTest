@@ -1,4 +1,4 @@
-package com.lijialun.frame.mine
+package com.lijialun.frame.model.mine
 
 import com.lijialun.frame.R
 import com.lijialun.frame.base.BaseFragment

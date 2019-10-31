@@ -1,9 +1,9 @@
-package com.lijialun.frame.home
+package com.lijialun.frame.model.free
 
 import android.content.Context
 import com.lijialun.frame.base.BasePresenter
 
-class HomePresenter:BasePresenter {
+class FreePresenter:BasePresenter {
     override fun onResume(context: Context) {
         TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }

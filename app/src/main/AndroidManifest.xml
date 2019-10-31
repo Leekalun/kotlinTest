@@ -11,7 +11,7 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme.NoBar"
             tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name="com.lijialun.frame.MainActivity">
+        <activity android:name="com.lijialun.frame.main.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 

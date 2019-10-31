@@ -1,13 +1,14 @@
-package com.lijialun.frame
+package com.lijialun.frame.main
 
-import android.widget.CompoundButton
 import android.widget.RadioGroup
-import android.widget.Switch
+import com.lijialun.frame.Constant
+import com.lijialun.frame.R
 import com.lijialun.frame.adapter.HomeAdapter
 import com.lijialun.frame.base.BaseActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
-class MainActivity : BaseActivity<MainContract.Presenter>(), MainContract.View,
+class MainActivity : BaseActivity<MainContract.Presenter>(),
+    MainContract.View,
     RadioGroup.OnCheckedChangeListener {
 
 

@@ -1,4 +1,4 @@
-package com.lijialun.frame
+package com.lijialun.frame.main
 
 import com.lijialun.frame.base.BasePresenter
 import com.lijialun.frame.base.BaseView

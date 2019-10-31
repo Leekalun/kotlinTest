@@ -1,4 +1,4 @@
-package com.lijialun.frame.movies
+package com.lijialun.frame.model.movies
 
 import com.lijialun.frame.R
 import com.lijialun.frame.base.BaseFragment

@@ -4,4 +4,6 @@
     <string name="button_name_video">Video</string>
     <string name="button_name_feelstyle">Feelstyle</string>
     <string name="button_name_mind">My</string>
+    <string name="text_address">深圳</string>
+    <string name="text_to_address">广州到深圳的火车票</string>
 </resources>

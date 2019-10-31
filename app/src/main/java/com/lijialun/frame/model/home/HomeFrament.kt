@@ -1,10 +1,7 @@
-package com.lijialun.frame.home
+package com.lijialun.frame.model.home
 
-import android.os.Parcel
-import android.os.Parcelable
 import com.lijialun.frame.R
 import com.lijialun.frame.base.BaseFragment
-import java.io.Serializable
 
 class HomeFrament : BaseFragment<HomePresenter>() {
     override fun getLayoutId(): Int {

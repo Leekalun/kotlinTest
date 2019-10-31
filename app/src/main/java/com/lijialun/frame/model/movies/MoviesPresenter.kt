@@ -1,4 +1,4 @@
-package com.lijialun.frame.movies
+package com.lijialun.frame.model.movies
 
 import android.content.Context
 import com.lijialun.frame.base.BasePresenter

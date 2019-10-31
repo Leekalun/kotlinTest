@@ -1,4 +1,4 @@
-package com.lijialun.frame.free
+package com.lijialun.frame.model.free
 
 import com.lijialun.frame.R
 import com.lijialun.frame.base.BaseFragment
