@@ -6,8 +6,17 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-    <com.lijialun.frame.widget.ButtomLab
+    <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content">
+
+        <include layout="@layout/heard_layout" />
+
+        <com.lijialun.frame.widget.ButtomLab
+                android:alpha="0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+    </FrameLayout>
 
 </LinearLayout>

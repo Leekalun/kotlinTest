@@ -8,8 +8,9 @@ import android.view.View
 import android.view.ViewGroup
 
 abstract class BaseFragment<T : BasePresenter> : Fragment() {
-    var activity: Context? = null
+    private var activity: Context? = null
     var presenter: BasePresenter? = null
+    var prepare: Boolean = false
     override fun onAttach(context: Context?) {
         activity = context
         super.onAttach(context)
@@ -20,16 +21,38 @@ abstract class BaseFragment<T : BasePresenter> : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        val inflate = inflater.inflate(getLayoutId(), container, false)
+        prepare = true
         initPresenter()
-        init()
-        return inflater.inflate(getLayoutId(), container,false)
+        init(inflate)
+        return inflate
     }
+
 
     abstract fun getLayoutId(): Int
 
-    abstract fun init()
+    abstract fun init(inflate: View)
 
     abstract fun initPresenter()
+
+    private fun lazyLoad() {
+        if (userVisibleHint && prepare) {
+            prepare = false
+            loadData()
+        }
+    }
+
+    override fun onResume() {
+        super.onResume()
+        lazyLoad()
+    }
+
+    override fun setUserVisibleHint(isVisibleToUser: Boolean) {
+        super.setUserVisibleHint(isVisibleToUser)
+        lazyLoad()
+    }
+
+    abstract fun loadData()
 }
 
 
