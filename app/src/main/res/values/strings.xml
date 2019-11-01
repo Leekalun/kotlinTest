@@ -10,4 +10,14 @@
     <string name="text_recomad">推荐</string>
     <string name="text_scenic">景点</string>
     <string name="text_stay">住宿</string>
+    <string name="text_more">更多</string>
+    <string name="text_free_run">自由行</string>
+    <string name="text_borrow_money">借钱</string>
+    <string name="text_write_car">白金卡</string>
+    <string name="text_credit_card">信用卡</string>
+    <string name="text_one_day">一日游</string>
+    <string name="text_follow_cap">跟团游</string>
+    <string name="text_car_self">自驾游</string>
+    <string name="text_visa">签证</string>
+    <string name="text_tour_self">定制游</string>
 </resources>

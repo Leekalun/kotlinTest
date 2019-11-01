@@ -4,10 +4,11 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
+
     <com.youth.banner.Banner
             android:id="@+id/banner"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/dp_150" />
+            android:layout_height="@dimen/dp_120" />
 
 
     <LinearLayout
@@ -30,41 +31,72 @@
 
         </LinearLayout>
 
-        <GridLayout
-                android:paddingTop="@dimen/dp_10"
-                android:paddingBottom="@dimen/dp_10"
-                android:paddingRight="@dimen/dp_20"
-                android:paddingLeft="@dimen/dp_20"
+        <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:columnCount="4"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginRight="@dimen/dp_20"
                 android:orientation="horizontal"
-                android:rowCount="2">
+                android:paddingTop="@dimen/dp_10"
+                android:paddingBottom="@dimen/dp_5">
 
-            <Button />
+            <TextView
+                    style="@style/HeadStyle"
+                    android:text="@string/text_car_self" />
 
-            <Button />
+            <TextView
 
-            <Button />
+                    style="@style/HeadStyle"
+                    android:text="@string/text_follow_cap" />
 
-            <Button />
+            <TextView
+                    style="@style/HeadStyle"
+                    android:text="@string/text_one_day" />
 
-            <Button />
+            <TextView
+                    style="@style/HeadStyle"
+                    android:text="@string/text_visa" />
 
-            <Button />
-
-            <Button />
-
-            <Button />
-
+            <TextView
+                    style="@style/HeadStyle"
+                    android:text="@string/text_tour_self" />
+        </LinearLayout>
 
 
-        </GridLayout>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginRight="@dimen/dp_20"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/dp_5"
+                android:paddingBottom="@dimen/dp_5">
+
+            <TextView
+                    style="@style/HeadStyle"
+                    android:text="@string/text_credit_card" />
+
+            <TextView
+                    style="@style/HeadStyle"
+                    android:text="@string/text_write_car" />
+
+            <TextView
+                    style="@style/HeadStyle"
+                    android:text="@string/text_borrow_money" />
+
+            <TextView
+                    style="@style/HeadStyle"
+                    android:text="@string/text_free_run" />
+
+            <TextView
+                    style="@style/HeadStyle"
+                    android:text="@string/text_more" />
+        </LinearLayout>
 
         <View
-                android:background="@color/color_B4CDCD"
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/dp_5"/>
+                android:layout_height="@dimen/dp_5"
+                android:background="@color/color_F7F7F7" />
     </LinearLayout>
 
 </LinearLayout>
