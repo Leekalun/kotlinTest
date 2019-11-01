@@ -16,8 +16,8 @@ class HomeFrament : BaseFragment<HomePresenter>() {
         return R.layout.home_fragment
     }
 
-    override fun init(view: View) {
-        view.banner.setImageLoader(GlideImageLoader())
+    override fun init(inflate: View) {
+        inflate.banner.setImageLoader(GlideImageLoader())
     }
 
 
@@ -33,5 +33,6 @@ class HomeFrament : BaseFragment<HomePresenter>() {
         imageList.add(Constant.IMAGE_3)
         imageList.add(Constant.IMAGE_4)
         banner.setImages(imageList).start()
+
     }
 }

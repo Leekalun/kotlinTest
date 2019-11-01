@@ -9,4 +9,62 @@
             android:layout_width="match_parent"
             android:layout_height="@dimen/dp_150" />
 
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-10dp"
+            android:background="@drawable/shape_head_bg"
+            android:clipChildren="false"
+            android:orientation="vertical">
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_120"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_5"
+                android:layout_marginRight="@dimen/dp_10"
+                android:background="@drawable/shape_head_content"
+                android:orientation="vertical">
+
+        </LinearLayout>
+
+        <GridLayout
+                android:paddingTop="@dimen/dp_10"
+                android:paddingBottom="@dimen/dp_10"
+                android:paddingRight="@dimen/dp_20"
+                android:paddingLeft="@dimen/dp_20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="4"
+                android:orientation="horizontal"
+                android:rowCount="2">
+
+            <Button />
+
+            <Button />
+
+            <Button />
+
+            <Button />
+
+            <Button />
+
+            <Button />
+
+            <Button />
+
+            <Button />
+
+
+
+        </GridLayout>
+
+        <View
+                android:background="@color/color_B4CDCD"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_5"/>
+    </LinearLayout>
+
 </LinearLayout>

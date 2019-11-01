@@ -4,19 +4,115 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@color/color_F7F7F7"
         android:orientation="vertical">
 
-    <FrameLayout
+
+    <android.support.design.widget.CoordinatorLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:background="@color/color_F2F2F2">
 
-        <include layout="@layout/heard_layout" />
-
-        <com.lijialun.frame.widget.ButtomLab
-                android:alpha="0"
+        <com.lijialun.frame.widget.WidgetAppBarLayout
+                android:id="@+id/appbar"
+                style="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:background="@color/color_F2F2F2"
+                app:elevation="0dp"
+                app:layout_scrollFlags="scroll|enterAlways">
 
-    </FrameLayout>
+            <com.lijialun.frame.widget.WidgetCollapBarLayout
+                    android:id="@+id/collapsingToolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/color_FFFFFF"
+                    app:contentScrim="@color/color_tm"
+                    app:layout_scrollFlags="scroll|exitUntilCollapsed">
 
+
+                <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    <include layout="@layout/heard_layout" />
+
+                    <com.lijialun.frame.widget.ButtomLab
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:alpha="0" />
+
+                </FrameLayout>
+
+            </com.lijialun.frame.widget.WidgetCollapBarLayout>
+        </com.lijialun.frame.widget.WidgetAppBarLayout>
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/color_FFFFFF"
+                android:orientation="vertical"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:orientation="horizontal">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/dp_5"
+                        android:paddingBottom="@dimen/dp_5"
+                        android:text="@string/text_fans"
+                        android:textSize="@dimen/sp_12" />
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:paddingTop="@dimen/dp_5"
+                        android:paddingBottom="@dimen/dp_5"
+                        android:text="@string/text_recomad"
+                        android:textSize="@dimen/sp_12" />
+
+                <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:paddingTop="@dimen/dp_5"
+                        android:paddingBottom="@dimen/dp_5"
+                        android:text="@string/text_scenic"
+                        android:textSize="@dimen/sp_12" />
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:paddingTop="@dimen/dp_5"
+                        android:paddingBottom="@dimen/dp_5"
+                        android:text="@string/text_stay"
+                        android:textSize="@dimen/sp_12" />
+
+            </LinearLayout>
+
+            <android.support.v4.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="500dp">
+
+                </LinearLayout>
+
+            </android.support.v4.widget.NestedScrollView>
+
+        </LinearLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
 </LinearLayout>

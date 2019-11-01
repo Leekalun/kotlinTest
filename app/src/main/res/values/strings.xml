@@ -6,4 +6,8 @@
     <string name="button_name_mind">My</string>
     <string name="text_address">深圳</string>
     <string name="text_to_address">广州到深圳的火车票</string>
+    <string name="text_fans">关注</string>
+    <string name="text_recomad">推荐</string>
+    <string name="text_scenic">景点</string>
+    <string name="text_stay">住宿</string>
 </resources>
